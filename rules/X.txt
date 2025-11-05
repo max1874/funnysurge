@@ -1,0 +1,5 @@
+# X - Grok AI
+
+# Grok domains
+DOMAIN-SUFFIX,grok.com
+DOMAIN-SUFFIX,x.ai
