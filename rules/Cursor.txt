@@ -1,0 +1,4 @@
+# Cursor - AI Code Editor
+
+# Cursor domains
+DOMAIN-KEYWORD,cursor

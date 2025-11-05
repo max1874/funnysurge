@@ -1,0 +1,22 @@
+# Other AI Services - Microsoft Copilot, Meta AI, Perplexity, etc.
+
+# Microsoft Copilot
+DOMAIN,copilot.microsoft.com
+DOMAIN-SUFFIX,bing.com
+
+# Meta AI
+DOMAIN-SUFFIX,meta.ai
+DOMAIN-SUFFIX,metademolab.com
+
+# Perplexity AI
+DOMAIN-SUFFIX,perplexity.ai
+
+# Gopher/Gemini related
+DOMAIN-SUFFIX,circumlunar.space
+DOMAIN-SUFFIX,vulpes.one
+DOMAIN-SUFFIX,mozz.us
+DOMAIN-SUFFIX,conman.org
+DOMAIN-SUFFIX,bortzmeyer.org
+
+# Domain keyword match
+DOMAIN-KEYWORD,logosear

@@ -1,0 +1,4 @@
+# OpenRouter - AI Model Router
+
+# OpenRouter domains
+DOMAIN-SUFFIX,openrouter.ai

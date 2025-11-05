@@ -1,0 +1,9 @@
+# Anthropic - Claude AI
+
+# Claude main domains
+DOMAIN-KEYWORD,grazie
+DOMAIN-KEYWORD,anthropic
+DOMAIN,cdn.usefathom.com
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,claude.ai
+DOMAIN-SUFFIX,claudeusercontent.com
