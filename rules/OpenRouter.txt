@@ -1,0 +1,3 @@
+# OpenRouter
+# Domain suffix match
+DOMAIN-SUFFIX,openrouter.ai
