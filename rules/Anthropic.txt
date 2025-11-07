@@ -1,0 +1,12 @@
+# Anthropic (Claude)
+# Domain match
+DOMAIN,cdn.usefathom.com
+
+# Domain suffix match
+DOMAIN-SUFFIX,anthropic.com
+DOMAIN-SUFFIX,claude.ai
+DOMAIN-SUFFIX,claudeusercontent.com
+
+# Domain keyword match
+DOMAIN-KEYWORD,anthropic
+DOMAIN-KEYWORD,grazie

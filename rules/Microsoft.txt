@@ -1,0 +1,6 @@
+# Microsoft Copilot & Bing
+# Domain match
+DOMAIN,copilot.microsoft.com
+
+# Domain suffix match
+DOMAIN-SUFFIX,bing.com

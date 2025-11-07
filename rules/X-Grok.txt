@@ -1,0 +1,4 @@
+# X (Grok)
+# Domain suffix match
+DOMAIN-SUFFIX,grok.com
+DOMAIN-SUFFIX,x.ai

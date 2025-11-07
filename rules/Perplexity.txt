@@ -1,0 +1,6 @@
+# Perplexity AI
+# Domain suffix match
+DOMAIN-SUFFIX,perplexity.ai
+
+# Domain keyword match
+DOMAIN-KEYWORD,logosear
