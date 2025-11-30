@@ -13,3 +13,4 @@ DOMAIN-SUFFIX,claudeusercontent.com
 DOMAIN-KEYWORD,anthropic
 DOMAIN-KEYWORD,grazie
 DOMAIN-KEYWORD,claude
+DOMAIN-KEYWORD,honeycomb
