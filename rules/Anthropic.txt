@@ -5,9 +5,11 @@ DOMAIN,cdn.usefathom.com
 # Domain suffix match
 DOMAIN-SUFFIX,anthropic.com
 DOMAIN-SUFFIX,claude.ai
+DOMAIN-SUFFIX,claude.com
 DOMAIN-SUFFIX,claudelog.com
 DOMAIN-SUFFIX,claudeusercontent.com
 
 # Domain keyword match
 DOMAIN-KEYWORD,anthropic
 DOMAIN-KEYWORD,grazie
+DOMAIN-KEYWORD,claude
