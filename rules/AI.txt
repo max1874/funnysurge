@@ -68,6 +68,7 @@ DOMAIN-KEYWORD,anthropic
 DOMAIN-KEYWORD,grazie
 DOMAIN-KEYWORD,claude
 DOMAIN-KEYWORD,honeycomb
+DOMAIN-KEYWORD,datadoghq
 
 # ========================================
 # Google (Gemini, Bard)
