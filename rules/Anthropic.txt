@@ -8,9 +8,11 @@ DOMAIN-SUFFIX,claude.ai
 DOMAIN-SUFFIX,claude.com
 DOMAIN-SUFFIX,claudelog.com
 DOMAIN-SUFFIX,claudeusercontent.com
+DOMAIN-SUFFIX,datadoghq.com
 
 # Domain keyword match
 DOMAIN-KEYWORD,anthropic
 DOMAIN-KEYWORD,grazie
 DOMAIN-KEYWORD,claude
 DOMAIN-KEYWORD,honeycomb
+DOMAIN-KEYWORD,datadoghq
