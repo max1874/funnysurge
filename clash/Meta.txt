@@ -1,0 +1,4 @@
+# Meta AI
+# Domain suffix match
+  - DOMAIN-SUFFIX,meta.ai
+  - DOMAIN-SUFFIX,metademolab.com
