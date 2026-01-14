@@ -1,3 +1,4 @@
-# OpenRouter
-# Domain suffix match
+payload:
+  # OpenRouter
+  # Domain suffix match
   - DOMAIN-SUFFIX,openrouter.ai

@@ -1,4 +1,5 @@
-# Web
+payload:
+  # Web
   - DOMAIN-SUFFIX,m-team.cc
   - DOMAIN-SUFFIX,totheglory.im
   - DOMAIN-SUFFIX,hdsky.me

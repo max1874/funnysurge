@@ -1,24 +1,25 @@
-# ========================================
-# Microsoft (Copilot, Bing)
-# ========================================
+payload:
+  # ========================================
+  # Microsoft (Copilot, Bing)
+  # ========================================
   - DOMAIN,copilot.microsoft.com
   - DOMAIN-SUFFIX,bing.com
 
-# ========================================
-# Meta AI
-# ========================================
+  # ========================================
+  # Meta AI
+  # ========================================
   - DOMAIN-SUFFIX,meta.ai
   - DOMAIN-SUFFIX,metademolab.com
 
-# ========================================
-# Perplexity AI
-# ========================================
+  # ========================================
+  # Perplexity AI
+  # ========================================
   - DOMAIN-SUFFIX,perplexity.ai
   - DOMAIN-KEYWORD,logosear
 
-# ========================================
-# OpenAI (ChatGPT, Sora)
-# ========================================
+  # ========================================
+  # OpenAI (ChatGPT, Sora)
+  # ========================================
   - DOMAIN,sora.com
   - DOMAIN,browser-intake-datadoghq.com
   - DOMAIN,chat.openai.com.cdn.cloudflare.net
@@ -55,9 +56,9 @@
   - DOMAIN-KEYWORD,openai
   - DOMAIN-KEYWORD,sora
 
-# ========================================
-# Anthropic (Claude)
-# ========================================
+  # ========================================
+  # Anthropic (Claude)
+  # ========================================
   - DOMAIN,cdn.usefathom.com
   - DOMAIN-SUFFIX,anthropic.com
   - DOMAIN-SUFFIX,claude.ai
@@ -71,9 +72,9 @@
   - DOMAIN-KEYWORD,honeycomb
   - DOMAIN-KEYWORD,datadoghq
 
-# ========================================
-# Google (Gemini, Bard)
-# ========================================
+  # ========================================
+  # Google (Gemini, Bard)
+  # ========================================
   - DOMAIN,ai.google.dev
   - DOMAIN,alkalimakersuite-pa.clients6.google.com
   - DOMAIN,makersuite.google.com
@@ -92,25 +93,25 @@
   - DOMAIN-KEYWORD,developerprofiles
   - DOMAIN-KEYWORD,generativelanguage
 
-# ========================================
-# X (Grok)
-# ========================================
+  # ========================================
+  # X (Grok)
+  # ========================================
   - DOMAIN-SUFFIX,grok.com
   - DOMAIN-SUFFIX,x.ai
 
-# ========================================
-# OpenRouter
-# ========================================
+  # ========================================
+  # OpenRouter
+  # ========================================
   - DOMAIN-SUFFIX,openrouter.ai
 
-# ========================================
-# Cursor
-# ========================================
+  # ========================================
+  # Cursor
+  # ========================================
   - DOMAIN-KEYWORD,cursor
 
-# ========================================
-# Other (Gemini Protocol servers, etc.)
-# ========================================
+  # ========================================
+  # Other (Gemini Protocol servers, etc.)
+  # ========================================
   - DOMAIN-SUFFIX,circumlunar.space
   - DOMAIN-SUFFIX,vulpes.one
   - DOMAIN-SUFFIX,mozz.us

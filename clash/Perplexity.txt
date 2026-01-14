@@ -1,6 +1,7 @@
-# Perplexity AI
-# Domain suffix match
+payload:
+  # Perplexity AI
+  # Domain suffix match
   - DOMAIN-SUFFIX,perplexity.ai
 
-# Domain keyword match
+  # Domain keyword match
   - DOMAIN-KEYWORD,logosear
