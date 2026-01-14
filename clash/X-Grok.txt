@@ -1,4 +1,5 @@
-# X (Grok)
-# Domain suffix match
+payload:
+  # X (Grok)
+  # Domain suffix match
   - DOMAIN-SUFFIX,grok.com
   - DOMAIN-SUFFIX,x.ai

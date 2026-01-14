@@ -1,5 +1,6 @@
-# OpenAI (ChatGPT, Sora)
-# Domain match
+payload:
+  # OpenAI (ChatGPT, Sora)
+  # Domain match
   - DOMAIN,sora.com
   - DOMAIN,browser-intake-datadoghq.com
   - DOMAIN,chat.openai.com.cdn.cloudflare.net
@@ -9,7 +10,7 @@
   - DOMAIN,production-openaicom-storage.azureedge.net
   - DOMAIN,static.cloudflareinsights.com
 
-# Domain suffix match
+  # Domain suffix match
   - DOMAIN-SUFFIX,ai.com
   - DOMAIN-SUFFIX,algolia.net
   - DOMAIN-SUFFIX,api.statsig.com
@@ -36,6 +37,6 @@
   - DOMAIN-SUFFIX,stripe.com
   - DOMAIN-SUFFIX,turn.livekit.cloud
 
-# Domain keyword match
+  # Domain keyword match
   - DOMAIN-KEYWORD,openai
   - DOMAIN-KEYWORD,sora
