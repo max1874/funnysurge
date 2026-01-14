@@ -1,0 +1,3 @@
+# Cursor
+# Domain keyword match
+  - DOMAIN-KEYWORD,cursor
