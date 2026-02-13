@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5f9cd148-1007-4ec1-9de8-f53c154e683d" name="Changes" comment="refactor: Add 'payload:' prefix to all Clash rule files&#10;&#10;This change ensures all Clash rule files now start with 'payload:' for&#10;consistency and proper parsing." />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="GOROOT" url="file:///opt/homebrew/opt/go/libexec" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;lin-youxiang&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:lin-youxiang/funnysurge.git&quot;,
+    &quot;accountId&quot;: &quot;aca52bf3-922d-4d2d-9a85-dd77c5c729ef&quot;
+  }
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2qoLkIPD2DEccnp0P7WbkpJCzkO" />
+  <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="Update" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.GoLinterPluginOnboarding": "true",
+    "RunOnceActivity.GoLinterPluginOnboardingV2": "true",
+    "RunOnceActivity.GoLinterPluginStorageMigration": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "RunOnceActivity.go.formatter.settings.were.checked": "true",
+    "RunOnceActivity.go.migrated.go.modules.settings": "true",
+    "RunOnceActivity.go.modules.go.list.on.any.changes.was.set": "true",
+    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
+    "git-widget-placeholder": "main",
+    "go.import.settings.migrated": "true",
+    "go.sdk.automatically.set": "true",
+    "last_opened_file_path": "/Users/ritsu/Projects/Repo/funnysurge",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "Errors",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Rules" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-9b0f141eb926-JavaScript-PY-253.29346.142" />
+        <option value="bundled-python-sdk-f2b7a9f6281b-6e1f45a539f7-com.jetbrains.pycharm.pro.sharedIndexes.bundled-PY-253.29346.142" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5f9cd148-1007-4ec1-9de8-f53c154e683d" name="Changes" comment="feat: add domain suffix for openrouter.ai and keyword for cursor" />
+      <created>1762486241960</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1762486241960</updated>
+      <workItem from="1768379501963" duration="1223000" />
+    </task>
+    <task id="LOCAL-00001" summary="refactor: Add 'payload:' prefix to all Clash rule files&#10;&#10;This change ensures all Clash rule files now start with 'payload:' for&#10;consistency and proper parsing.">
+      <option name="closed" value="true" />
+      <created>1768379523585</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1768379523585</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="chore: update domain suffixes and keywords for Datadog in AI and Anthropic rules&#10;&#10;- Added DOMAIN-SUFFIX for datadoghq.com in both AI.txt and Anthropic" />
+    <MESSAGE value="chore: update domain suffixes and keywords for Datadog in AI and Anthropic rules&#10;&#10;- Added DOMAIN-SUFFIX for datadoghq.com in both AI.txt and Anthropic.txt" />
+    <MESSAGE value="chore: update domain suffixes and keywords for Datadog in AI and Anthropic rules&#10;&#10;- Added DOMAIN-SUFFIX for datadoghq.com in both AI.txt and Anthropic.txt&#10;" />
+    <MESSAGE value="chore: update domain suffixes and keywords for Datadog in AI and Anthropic rules&#10;&#10;- Added DOMAIN-SUFFIX for datadoghq.com in both AI.txt and Anthropic.txt&#10;-" />
+    <MESSAGE value="chore: update domain suffixes and keywords for Datadog in AI and Anthropic rules&#10;&#10;- Added DOMAIN-SUFFIX for datadoghq.com in both AI.txt and Anthropic.txt&#10;- Added" />
+    <MESSAGE value="chore: update domain suffixes and keywords for Datadog in AI and Anthropic rules&#10;&#10;- Added DOMAIN-SUFFIX for datadoghq.com in both AI.txt and Anthropic.txt&#10;- Added DOMAIN" />
+    <MESSAGE value="chore: update domain suffixes and keywords for Datadog in AI and Anthropic rules&#10;&#10;- Added DOMAIN-SUFFIX for datadoghq.com in both AI.txt and Anthropic.txt&#10;- Added DOMAIN-" />
+    <MESSAGE value="chore: update domain suffixes and keywords for Datadog in AI and Anthropic rules&#10;&#10;- Added DOMAIN-SUFFIX for datadoghq.com in both AI.txt and Anthropic.txt&#10;- Added DOMAIN-KEY" />
+    <MESSAGE value="chore: update domain suffixes and keywords for Datadog in AI and Anthropic rules&#10;&#10;- Added DOMAIN-SUFFIX for datadoghq.com in both AI.txt and Anthropic.txt&#10;- Added DOMAIN-KEYWORD" />
+    <MESSAGE value="chore: update domain suffixes and keywords for Datadog in AI and Anthropic rules&#10;&#10;- Added DOMAIN-SUFFIX for datadoghq.com in both AI.txt and Anthropic.txt&#10;- Added DOMAIN-KEYWORD for" />
+    <MESSAGE value="chore: update domain suffixes and keywords for Datadog in AI and Anthropic rules&#10;&#10;- Added DOMAIN-SUFFIX for datadoghq.com in both AI.txt and Anthropic.txt&#10;- Added DOMAIN-KEYWORD for dat" />
+    <MESSAGE value="chore: update domain suffixes and keywords for Datadog in AI and Anthropic rules&#10;&#10;- Added DOMAIN-SUFFIX for datadoghq.com in both AI.txt and Anthropic.txt&#10;- Added DOMAIN-KEYWORD for datad" />
+    <MESSAGE value="chore: update domain suffixes and keywords for Datadog in AI and Anthropic rules&#10;&#10;- Added DOMAIN-SUFFIX for datadoghq.com in both AI.txt and Anthropic.txt&#10;- Added DOMAIN-KEYWORD for datadogh" />
+    <MESSAGE value="chore: update domain suffixes and keywords for Datadog in AI and Anthropic rules&#10;&#10;- Added DOMAIN-SUFFIX for datadoghq.com in both AI.txt and Anthropic.txt&#10;- Added DOMAIN-KEYWORD for datadoghq" />
+    <MESSAGE value="chore: update domain suffixes and keywords for Datadog in AI and Anthropic rules&#10;&#10;- Added DOMAIN-SUFFIX for datadoghq.com in both AI.txt and Anthropic.txt&#10;- Added DOMAIN-KEYWORD for datadoghq in" />
+    <MESSAGE value="chore: update domain suffixes and keywords for Datadog in AI and Anthropic rules&#10;&#10;- Added DOMAIN-SUFFIX for datadoghq.com in both AI.txt and Anthropic.txt&#10;- Added DOMAIN-KEYWORD for datadoghq in both" />
+    <MESSAGE value="chore: update domain suffixes and keywords for Datadog in AI and Anthropic rules&#10;&#10;- Added DOMAIN-SUFFIX for datadoghq.com in both AI.txt and Anthropic.txt&#10;- Added DOMAIN-KEYWORD for datadoghq in both AI" />
+    <MESSAGE value="chore: update domain suffixes and keywords for Datadog in AI and Anthropic rules&#10;&#10;- Added DOMAIN-SUFFIX for datadoghq.com in both AI.txt and Anthropic.txt&#10;- Added DOMAIN-KEYWORD for datadoghq in both AI.txt" />
+    <MESSAGE value="chore: update domain suffixes and keywords for Datadog in AI and Anthropic rules&#10;&#10;- Added DOMAIN-SUFFIX for datadoghq.com in both AI.txt and Anthropic.txt&#10;- Added DOMAIN-KEYWORD for datadoghq in both AI.txt and" />
+    <MESSAGE value="chore: update domain suffixes and keywords for Datadog in AI and Anthropic rules&#10;&#10;- Added DOMAIN-SUFFIX for datadoghq.com in both AI.txt and Anthropic.txt&#10;- Added DOMAIN-KEYWORD for datadoghq in both AI.txt and Anth" />
+    <MESSAGE value="chore: update domain suffixes and keywords for Datadog in AI and Anthropic rules&#10;&#10;- Added DOMAIN-SUFFIX for datadoghq.com in both AI.txt and Anthropic.txt&#10;- Added DOMAIN-KEYWORD for datadoghq in both AI.txt and Anthropic" />
+    <MESSAGE value="chore: update domain suffixes and keywords for Datadog in AI and Anthropic rules&#10;&#10;- Added DOMAIN-SUFFIX for datadoghq.com in both AI.txt and Anthropic.txt&#10;- Added DOMAIN-KEYWORD for datadoghq in both AI.txt and Anthropic.txt" />
+    <MESSAGE value="ref" />
+    <MESSAGE value="refactor: Add 'payload:' prefix to all Clash rule files&#10;&#10;This change ensures all Clash rule" />
+    <MESSAGE value="refactor: Add 'payload:' prefix to all Clash rule files&#10;&#10;This change ensures all Clash rule files now start with 'payload:' for&#10;consistency and proper parsing." />
+    <option name="LAST_COMMIT_MESSAGE" value="refactor: Add 'payload:' prefix to all Clash rule files&#10;&#10;This change ensures all Clash rule files now start with 'payload:' for&#10;consistency and proper parsing." />
+  </component>
+  <component name="github-copilot-workspace">
+    <instructionFileLocations>
+      <option value=".github/instructions" />
+    </instructionFileLocations>
+    <promptFileLocations>
+      <option value=".github/prompts" />
+    </promptFileLocations>
+  </component>
+</project>
