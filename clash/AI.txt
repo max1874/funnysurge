@@ -100,6 +100,13 @@ payload:
   - DOMAIN-SUFFIX,x.ai
 
   # ========================================
+  # Amazon Bedrock
+  # ========================================
+  - DOMAIN-SUFFIX,bedrock.amazonaws.com
+  - DOMAIN-KEYWORD,bedrock-runtime
+  - DOMAIN-KEYWORD,bedrock-agent
+
+  # ========================================
   # OpenRouter
   # ========================================
   - DOMAIN-SUFFIX,openrouter.ai
