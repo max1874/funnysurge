@@ -1,0 +1,5 @@
+# Music
+# Spotify
+DOMAIN-SUFFIX,spotify.com
+DOMAIN-SUFFIX,spotify.net
+DOMAIN-SUFFIX,spotifycdn.com
