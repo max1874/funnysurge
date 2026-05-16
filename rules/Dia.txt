@@ -1,0 +1,12 @@
+# Dia Browser
+# Domain match
+DOMAIN,account.diabrowser.engineering
+
+# Domain suffix match
+DOMAIN-SUFFIX,diabrowser.engineering
+DOMAIN-SUFFIX,diabrowser.com
+DOMAIN-SUFFIX,diabrowserusercontent.com
+DOMAIN-SUFFIX,diabrowser.com.hk
+
+# Domain keyword match
+DOMAIN-KEYWORD,diabrowser
