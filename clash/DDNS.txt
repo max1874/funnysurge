@@ -1,7 +1,8 @@
 payload:
-  # IP 查询 / DDNS
+  # IP 查询 / DDNS / 工具
   - DOMAIN,api.ipify.org
   - DOMAIN,ddns.oray.com
   - DOMAIN,ip.3322.net
   - DOMAIN,4.ipw.cn
   - DOMAIN,v4.yinghualuo.cn
+  - DOMAIN-SUFFIX,time.is
