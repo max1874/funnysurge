@@ -1,0 +1,4 @@
+# Common public resources
+
+# Domain match
+DOMAIN,fonts.gstatic.com
