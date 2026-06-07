@@ -1,0 +1,13 @@
+payload:
+  # Brokerage
+
+  # Futu / Futubull / Futu NiuNiu / moomoo
+  - DOMAIN-SUFFIX,futu5.com
+  - DOMAIN-SUFFIX,futunn.com
+  - DOMAIN-SUFFIX,futuhk.com
+  - DOMAIN-SUFFIX,futuholdings.com
+  - DOMAIN-SUFFIX,fututrade.com
+  - DOMAIN-SUFFIX,futusg.com
+  - DOMAIN-SUFFIX,futuie.com
+  - DOMAIN-SUFFIX,futucrypto.com
+  - DOMAIN-SUFFIX,moomoo.com

@@ -20,6 +20,7 @@ DOMAIN-SUFFIX,hdfans.org
 DOMAIN-SUFFIX,f1carreras.xyz
 DOMAIN-SUFFIX,yemapt.org
 DOMAIN-SUFFIX,qingwapt.org
+DOMAIN-SUFFIX,qingwapt.com
 DOMAIN-SUFFIX,ubits.club
 DOMAIN-SUFFIX,haidan.video
 DOMAIN-SUFFIX,lemonhd.club
@@ -45,4 +46,4 @@ DOMAIN-SUFFIX,hspt.club
 DOMAIN-SUFFIX,nicept.net
 DOMAIN-SUFFIX,kamept.com
 DOMAIN-SUFFIX,fsm.name
-DOMAIN-KEYWORD,pterclub
+DOMAIN-SUFFIX,pterclub.net
