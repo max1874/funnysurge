@@ -1,4 +1,4 @@
-# OpenAI (ChatGPT, Sora)
+# OpenAI (ChatGPT, Sora, Codex)
 # Domain match
 DOMAIN,sora.com
 DOMAIN,browser-intake-datadoghq.com
@@ -14,9 +14,11 @@ DOMAIN-SUFFIX,ai.com
 DOMAIN-SUFFIX,algolia.net
 DOMAIN-SUFFIX,api.statsig.com
 DOMAIN-SUFFIX,auth0.com
+DOMAIN-SUFFIX,chat.com
 DOMAIN-SUFFIX,chatgpt.com
 DOMAIN-SUFFIX,chatgpt.livekit.cloud
 DOMAIN-SUFFIX,client-api.arkoselabs.com
+DOMAIN-SUFFIX,crixet.com
 DOMAIN-SUFFIX,events.statsigapi.net
 DOMAIN-SUFFIX,featuregates.org
 DOMAIN-SUFFIX,host.livekit.cloud
@@ -25,6 +27,7 @@ DOMAIN-SUFFIX,intercom.io
 DOMAIN-SUFFIX,intercomcdn.com
 DOMAIN-SUFFIX,launchdarkly.com
 DOMAIN-SUFFIX,oaistatic.com
+DOMAIN-SUFFIX,oaistatsig.com
 DOMAIN-SUFFIX,oaiusercontent.com
 DOMAIN-SUFFIX,observeit.net
 DOMAIN-SUFFIX,openai.com
@@ -39,3 +42,5 @@ DOMAIN-SUFFIX,turn.livekit.cloud
 # Domain keyword match
 DOMAIN-KEYWORD,openai
 DOMAIN-KEYWORD,sora
+# Codex / ChatGPT async tasks over Azure Web PubSub (chatgpt-async-webps-prod-*.webpubsub.azure.com)
+DOMAIN-KEYWORD,chatgpt-async-webps
