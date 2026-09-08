@@ -1,0 +1,27 @@
+# Personal reject list; policy and sources: ../docs/reject.md
+# Reviewed: 2026-09-08. Keep in sync with ../clash/Reject.txt.
+
+# Explicit personal choices
+DOMAIN-SUFFIX,cnblogs.com
+DOMAIN-SUFFIX,csdn.net
+
+# Selected from inkss and cobaltdisco (sources in docs/reject.md)
+DOMAIN-SUFFIX,codeantenna.com
+DOMAIN-SUFFIX,cxyzjd.com
+
+# Selected from cobaltdisco
+DOMAIN-SUFFIX,adoclib.com
+DOMAIN-SUFFIX,askdev.ru
+DOMAIN-SUFFIX,cdmana.com
+DOMAIN-SUFFIX,chowdera.com
+DOMAIN-SUFFIX,code-examples.net
+DOMAIN-SUFFIX,codeleading.com
+DOMAIN-SUFFIX,codenong.com
+DOMAIN-SUFFIX,codeprj.com
+DOMAIN-SUFFIX,coder.work
+DOMAIN-SUFFIX,coderoad.ru
+DOMAIN-SUFFIX,codetd.com
+DOMAIN-SUFFIX,copyfuture.com
+DOMAIN-SUFFIX,copyprogramming.com
+DOMAIN-SUFFIX,cxybb.com
+DOMAIN-SUFFIX,cxymm.net
