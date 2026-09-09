@@ -1,0 +1,12 @@
+# Local subscription credentials and generated profiles
+/local/
+
+# Private Surge skill and its local documentation/template entry points
+/skills/surge-config/
+/templates/Surge.universal.conf
+/docs/AI-AGENT.md
+/README.md
+
+# Local IDE and Finder metadata
+/.idea/
+.DS_Store
