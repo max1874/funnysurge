@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256" fill="none">
+  <title>funnysurge</title>
+  <desc>Three routes branch from one connection on a deep blue tile.</desc>
+  <defs>
+    <linearGradient id="tile" x1="24" y1="16" x2="232" y2="248" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#182C48"/>
+      <stop offset="1" stop-color="#0A1426"/>
+    </linearGradient>
+    <linearGradient id="route" x1="56" y1="128" x2="194" y2="68" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#38BDF8"/>
+      <stop offset="1" stop-color="#A5F3FC"/>
+    </linearGradient>
+  </defs>
+  <rect x="8" y="8" width="240" height="240" rx="56" fill="url(#tile)"/>
+  <rect x="8.75" y="8.75" width="238.5" height="238.5" rx="55.25" stroke="#FFFFFF" stroke-opacity=".09" stroke-width="1.5"/>
+  <path d="M60 128H192" stroke="#38BDF8" stroke-width="14" stroke-linecap="round"/>
+  <path d="M60 128H100C116 128 128 116 128 100V92C128 76 140 64 156 64H192" stroke="url(#route)" stroke-width="14" stroke-linecap="round"/>
+  <path d="M100 128C116 128 128 140 128 156V164C128 180 140 192 156 192H192" stroke="#64748B" stroke-width="14" stroke-linecap="round"/>
+  <circle cx="60" cy="128" r="15" fill="#E0F2FE"/>
+  <circle cx="192" cy="64" r="15" fill="#A5F3FC"/>
+  <circle cx="192" cy="128" r="15" fill="#38BDF8"/>
+  <circle cx="192" cy="192" r="15" fill="#FB923C"/>
+</svg>

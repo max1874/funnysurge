@@ -1,0 +1,25 @@
+# Snippet only: merge into an existing Clash / Mihomo configuration.
+# Keep one rule-providers mapping and one rules list; do not duplicate YAML keys.
+# Replace PROXY with your own policy/group and place rules before broader matches
+# and MATCH. Setup: ../docs/usage.md / ../docs/usage.zh-Hans.md
+
+rule-providers:
+  funnysurge-openai:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/max1874/funnysurge/main/clash/OpenAI.txt
+    path: ./rule-providers/funnysurge-openai.yaml
+    interval: 86400
+
+  funnysurge-anthropic:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/max1874/funnysurge/main/clash/Anthropic.txt
+    path: ./rule-providers/funnysurge-anthropic.yaml
+    interval: 86400
+
+rules:
+  - RULE-SET,funnysurge-openai,PROXY
+  - RULE-SET,funnysurge-anthropic,PROXY
