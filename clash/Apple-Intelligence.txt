@@ -27,3 +27,7 @@ payload:
   - DOMAIN,mask-t.apple-dns.net
   - DOMAIN,mask-api.icloud.com
   - DOMAIN,mask-api.fe.apple-dns.net
+  - DOMAIN,probe.icloud.com
+  - DOMAIN,metrics.icloud.com
+  - DOMAIN,mask-api.fe2.apple-dns.net
+  - DOMAIN,apple-carry-relay.cloudflare.com
