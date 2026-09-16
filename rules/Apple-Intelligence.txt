@@ -16,3 +16,13 @@ DOMAIN,gspe1-ssl.ls.apple.com
 DOMAIN-SUFFIX,apple-relay.akamaized.net
 DOMAIN-SUFFIX,apple-relay.mask.apple-dns.net
 DOMAIN-KEYWORD,apple-relay
+DOMAIN-KEYWORD,siri
+DOMAIN-SUFFIX,apps.mzstatic.com
+DOMAIN-SUFFIX,mask.icloud.com
+DOMAIN-SUFFIX,mask-h2.icloud.com
+DOMAIN-SUFFIX,ls.apple.com
+DOMAIN-SUFFIX,gateway.icloud.com
+DOMAIN,mask.apple-dns.net
+DOMAIN,mask-t.apple-dns.net
+DOMAIN,mask-api.icloud.com
+DOMAIN,mask-api.fe.apple-dns.net
