@@ -1,0 +1,19 @@
+# Education email tutorial sites (explicitly listed URLs)
+DOMAIN-SUFFIX,office.com
+DOMAIN,account.activedirectory.windowsazure.com
+DOMAIN-SUFFIX,tccd.edu
+DOMAIN,tccd.primo.exlibrisgroup.com
+DOMAIN-SUFFIX,github.com
+DOMAIN-SUFFIX,liout.com
+DOMAIN-SUFFIX,mjj.today
+DOMAIN,jzelf-gsulr-g5lfs-bd1s4.glados.space
+DOMAIN-SUFFIX,miyaip.com
+DOMAIN-SUFFIX,roxybrowser.com
+DOMAIN,edu.chatgpt.org.uk
+DOMAIN,idgenerator-xi.vercel.app
+DOMAIN,student.frp.gs
+DOMAIN,acagen.suck-dick.tech
+DOMAIN-SUFFIX,obsproject.com
+DOMAIN-SUFFIX,aerr.cn
+DOMAIN-SUFFIX,edumails.cn
+DOMAIN-SUFFIX,wytsg.com
