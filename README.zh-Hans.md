@@ -89,4 +89,4 @@ funnysurge/
 
 基础配置还引用了 [Sukka](https://github.com/SukkaW/Surge)、[blackmatrix7](https://github.com/blackmatrix7/ios_rule_script) 和 [Loyalsoldier](https://github.com/Loyalsoldier/surge-rules) 独立维护的规则。远程名单遵循各自的维护策略和许可证。
 
-本仓库采用 [MIT](LICENSE) 许可证，保留原有版权声明。
+本仓库采用 [MIT](LICENSE) 许可证，© 2024 MAX LIN，保留原有版权声明。

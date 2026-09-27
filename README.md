@@ -116,5 +116,5 @@ The base profile also references independently maintained rules from
 [Loyalsoldier](https://github.com/Loyalsoldier/surge-rules). Those remote lists
 have their own policies and licenses.
 
-This repository is licensed under [MIT](LICENSE). Original copyright notices
+This repository is licensed under [MIT](LICENSE) © 2024 MAX LIN. Original copyright notices
 are preserved.
