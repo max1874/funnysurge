@@ -36,6 +36,15 @@ that client format is not published.
 | [TikTok.txt](../rules/TikTok.txt) | TikTok, CapCut, ByteDance overseas / 字节海外服务 | [Raw](https://raw.githubusercontent.com/max1874/funnysurge/main/rules/TikTok.txt) | — |
 | [PT.txt](../rules/PT.txt) | Private tracker sites / PT 站点 | [Raw](https://raw.githubusercontent.com/max1874/funnysurge/main/rules/PT.txt) | [Raw](https://raw.githubusercontent.com/max1874/funnysurge/main/clash/PT.txt) |
 
+## Interactive Brokers · 盈透证券
+
+| List / 名单 | Scope / 内容 | Surge | Clash / Mihomo |
+| --- | --- | --- | --- |
+| [IBKR.txt](../rules/IBKR.txt) | TWS / Gateway, API, regional websites / 地区官网；[维护说明](ibkr.md) | [Raw](https://raw.githubusercontent.com/max1874/funnysurge/main/rules/IBKR.txt) | [Raw](https://raw.githubusercontent.com/max1874/funnysurge/main/clash/IBKR.txt) |
+
+IBKR is separate from the Futu / moomoo Brokerage list; assign its policy independently.
+IBKR 独立于富途 / moomoo 的 Brokerage 名单，单独指定策略。
+
 ## Direct and reject · 直连与屏蔽
 
 The base profile assigns `DIRECT` to Brokerage and DDNS, and `REJECT` to Reject.

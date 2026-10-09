@@ -20,6 +20,15 @@ rule-providers:
     path: ./rule-providers/funnysurge-anthropic.yaml
     interval: 86400
 
+  funnysurge-ibkr:
+    type: http
+    behavior: classical
+    format: yaml
+    url: https://raw.githubusercontent.com/max1874/funnysurge/main/clash/IBKR.txt
+    path: ./rule-providers/funnysurge-ibkr.yaml
+    interval: 86400
+
 rules:
+  - RULE-SET,funnysurge-ibkr,PROXY
   - RULE-SET,funnysurge-openai,PROXY
   - RULE-SET,funnysurge-anthropic,PROXY
