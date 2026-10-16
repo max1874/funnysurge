@@ -129,7 +129,7 @@ More on the project page: <https://max1874.com/funnysurge/>
 - **Choose an aggregate or individual lists.** `AI.txt` combines several
   services and some additional domains. It is maintained separately, rather
   than generated as an exact union of the individual files.
-- **The client formats have differences.** There are 21 Surge lists and 20
+- **The client formats have differences.** There are 22 Surge lists and 21
   Clash lists; TikTok is currently Surge-only. Same-name lists can differ in
   coverage. The [catalog](docs/rules.md) records the known differences.
 - **Reject expresses a preference.** It includes sites such as CSDN and
