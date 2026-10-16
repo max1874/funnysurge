@@ -15,6 +15,12 @@ funnysurge is a set of hand-maintained routing rule sets for Surge and Clash / M
 The lists cover AI services, development tools, media, direct connections, and
 sites I choose to block. Subscribe to the lists you need and assign your own policies.
 
+<p align="center">
+  <a href="https://max1874.com/funnysurge/"><img src="assets/demo.en.gif" width="600" alt="Domains go to PROXY, DIRECT or REJECT according to the list they are in"></a>
+  <br>
+  <sub>A recorded demo from <a href="https://max1874.com/funnysurge/">max1874.com/funnysurge</a>, where you can try it yourself.</sub>
+</p>
+
 The repository also includes a personal Surge base profile. Bring your own
 proxies: this project supplies rules and configuration examples, with no nodes
 or subscription service.

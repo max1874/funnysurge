@@ -13,6 +13,12 @@
 
 funnysurge 是一组手工维护的 Surge 与 Clash / Mihomo 分流规则集。规则覆盖 AI 服务、开发工具、媒体、直连需求和个人屏蔽名单。按需订阅规则，再指定适合自己的策略。
 
+<p align="center">
+  <a href="https://max1874.com/funnysurge/"><img src="assets/demo.zh.gif" width="600" alt="域名按所在的名单分到 PROXY、DIRECT 或 REJECT"></a>
+  <br>
+  <sub>动图录自 <a href="https://max1874.com/funnysurge/">max1874.com/funnysurge</a>，那里可以亲手试。</sub>
+</p>
+
 仓库也保留了一份个人 Surge 基础配置。节点需要自备；这里提供规则和配置示例，没有代理节点或订阅服务。
 
 ## 从哪里开始
