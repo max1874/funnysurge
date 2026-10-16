@@ -11,9 +11,9 @@
   <p><a href="#quick-start"><strong>Quick start</strong></a> · <a href="docs/rules.md">Rule catalog</a> · <a href="docs/usage.md">Setup guide</a> · <a href="README.zh-Hans.md">简体中文</a></p>
 </div>
 
-funnysurge is my collection of routing rules for Surge and Clash / Mihomo,
-covering AI services, development tools, media, direct connections, and sites I
-choose to block. Subscribe to the lists you need and assign your own policies.
+funnysurge is a set of hand-maintained routing rule sets for Surge and Clash / Mihomo.
+The lists cover AI services, development tools, media, direct connections, and
+sites I choose to block. Subscribe to the lists you need and assign your own policies.
 
 The repository also includes a personal Surge base profile. Bring your own
 proxies: this project supplies rules and configuration examples, with no nodes
@@ -88,6 +88,38 @@ funnysurge/
 `rules/`, `clash/`, and `base.conf` keep their published paths so existing raw
 subscriptions continue to work. Browse by service through the catalog, or by
 client through the two rule directories.
+
+## FAQ
+
+### Does this include proxy servers or a subscription?
+
+No. The repository has rule files, snippets, and a base profile. A rule only
+decides which policy a connection matches; you supply the proxies behind it.
+
+### Should I use `AI.txt` or the individual service lists?
+
+Use `AI.txt` when every AI service should take the same policy. Use the
+individual lists when services need different policies, and put them before
+`AI.txt` if you use both.
+
+### Does it work with Clash Verge Rev?
+
+Clash Verge Rev runs the Mihomo core, so use the `clash/` files as
+`behavior: classical`, `format: yaml` rule providers, as in the
+[YAML snippet](examples/clash-rule-providers.yaml).
+
+### How are the lists updated?
+
+By hand, with no generator, CI, or scheduled sync. Raw links follow `main`;
+refresh the rule set or provider in your client to pick up changes.
+
+### How does this relate to Sukka, blackmatrix7, or Loyalsoldier rules?
+
+Those cover far more ground. These lists are small and specific, and work
+alongside them: [base.conf](base.conf) combines rules from those projects with
+these lists.
+
+More on the project page: <https://max1874.com/funnysurge/>
 
 ## Scope and maintenance
 

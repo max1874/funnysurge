@@ -11,7 +11,7 @@
   <p><a href="#快速开始"><strong>快速开始</strong></a> · <a href="docs/rules.md">规则索引</a> · <a href="docs/usage.zh-Hans.md">配置指南</a> · <a href="README.md">English</a></p>
 </div>
 
-funnysurge 是我个人维护的 Surge 与 Clash / Mihomo 分流规则，覆盖 AI 服务、开发工具、媒体、直连需求和个人屏蔽名单。按需订阅规则，再指定适合自己的策略。
+funnysurge 是一组手工维护的 Surge 与 Clash / Mihomo 分流规则集。规则覆盖 AI 服务、开发工具、媒体、直连需求和个人屏蔽名单。按需订阅规则，再指定适合自己的策略。
 
 仓库也保留了一份个人 Surge 基础配置。节点需要自备；这里提供规则和配置示例，没有代理节点或订阅服务。
 
@@ -75,6 +75,30 @@ funnysurge/
 ```
 
 `rules/`、`clash/` 和 `base.conf` 保留原有公开路径，已有的原始订阅链接可以继续使用。按服务找规则看索引，按客户端找文件看对应目录。
+
+## 常见问题
+
+### 这里提供节点或订阅吗？
+
+不提供。仓库里只有规则文件、配置片段和基础配置。规则只决定连接匹配到哪个策略，策略背后的节点需要自备。
+
+### 用 `AI.txt` 还是单个服务的名单？
+
+所有 AI 服务走同一个策略时用 `AI.txt`；不同服务要走不同策略时用独立名单。两者都用的话，把独立名单排在 `AI.txt` 前面。
+
+### Clash Verge Rev 能用吗？
+
+Clash Verge Rev 内置 Mihomo 内核，按 `behavior: classical`、`format: yaml` 引用 `clash/` 下的文件即可，参考 [YAML 配置片段](examples/clash-rule-providers.yaml)。
+
+### 名单怎么更新？
+
+手工修改，没有生成脚本、CI 或定时同步。原始链接跟随 `main`，在客户端刷新规则集或 provider 即可拿到新内容。
+
+### 和 Sukka、blackmatrix7、Loyalsoldier 的规则是什么关系？
+
+那些项目覆盖范围大得多。这里的名单小而具体，可以和它们一起用：[base.conf](base.conf) 就把那些项目的规则和这里的名单放在一起引用。
+
+项目页面：<https://max1874.com/funnysurge/>
 
 ## 范围与维护方式
 
