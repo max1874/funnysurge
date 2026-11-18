@@ -61,17 +61,43 @@ payload:
   # Anthropic (Claude)
   # ========================================
   - DOMAIN,cdn.usefathom.com
+  - DOMAIN,ant.dev
+  - DOMAIN,anthropic.team
+  - DOMAIN,chatbotclaude.com
+  - DOMAIN,anthropic.auth0.com
+  - DOMAIN,cdn.growthbook.io
+  - DOMAIN,browser-intake-us5-datadoghq.com
+  - DOMAIN,servd-anthropic-website.b-cdn.net
+  - DOMAIN,anthropic.com.cdn.cloudflare.net
   - DOMAIN-SUFFIX,anthropic.com
+  - DOMAIN-SUFFIX,anthropic.com.cn
   - DOMAIN-SUFFIX,claude.ai
   - DOMAIN-SUFFIX,claude.com
+  - DOMAIN-SUFFIX,claude.app
+  - DOMAIN-SUFFIX,claude.dev
+  - DOMAIN-SUFFIX,claude.new
+  - DOMAIN-SUFFIX,claude.site
   - DOMAIN-SUFFIX,claudelog.com
   - DOMAIN-SUFFIX,claudeusercontent.com
+  - DOMAIN-SUFFIX,clau.de
+  - DOMAIN-SUFFIX,claudemcpclient.com
+  - DOMAIN-SUFFIX,claudemcpcontent.com
+  - DOMAIN-SUFFIX,claudepages.dev
+  - DOMAIN-SUFFIX,claudestudio.com
+  - DOMAIN-SUFFIX,claudeacademy.com
+  - DOMAIN-SUFFIX,modelcontextprotocol.io
+  - DOMAIN-SUFFIX,modelcontextprotocol.com
+  - DOMAIN-SUFFIX,modelcontextprotocol.net
+  - DOMAIN-SUFFIX,modelcontextprotocol.org
+  - DOMAIN-SUFFIX,antspace.dev
   - DOMAIN-SUFFIX,datadoghq.com
+  - DOMAIN-SUFFIX,statsigapi.net
   - DOMAIN-KEYWORD,anthropic
   - DOMAIN-KEYWORD,grazie
   - DOMAIN-KEYWORD,claude
   - DOMAIN-KEYWORD,honeycomb
   - DOMAIN-KEYWORD,datadoghq
+  - DOMAIN-KEYWORD,sift
 
   # ========================================
   # Google (Gemini, Bard)
