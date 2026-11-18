@@ -9,7 +9,7 @@
 3. 把具体规则放在可能先匹配同一请求的宽泛规则之前，并排在 `FINAL` 之前。保存配置，在客户端更新规则集。
 4. 打开对应服务，在请求记录中查看实际命中的规则与最终策略。
 
-[示例片段](../examples/surge-rules.conf)包含 OpenAI、Anthropic 和 Gemini。复制条目到现有配置段中，不要重复添加 `[Rule]` 段。需要统一分流多个服务时可选择 `AI.txt`；需要分别指定策略时用独立名单。如果两者都用，应把具体服务的覆盖规则放在前面。
+需要统一分流多个 AI 服务时可选择 `AI.txt`。需要分别指定策略时用独立名单。如果两者都用，把具体服务的覆盖规则放在前面。[Surge 快速开始](../README.zh-Hans.md#surge)
 
 匹配行为参考 Surge 的[规则系统文档](https://manual.nssurge.com/rules/overview.html)。
 
@@ -17,47 +17,20 @@
 
 使用 `clash/` 下的文件，设置 `behavior: classical` 和 `format: yaml`。为兼容已有订阅，扩展名保留 `.txt`，文件内容实际是 YAML `payload` 列表。
 
-把[示例片段](../examples/clash-rule-providers.yaml)合并进当前配置。顶层保留一个 `rule-providers` 映射和一个 `rules` 列表，向它们追加内容，不要重复创建同名 YAML 键。每个 provider 使用独立的名称和缓存路径。将 `PROXY` 替换成已有策略名。
+把 provider 定义添加到顶层的 `rule-providers` 映射，把匹配规则添加到 `rules` 列表。每个 provider 使用独立的名称和缓存路径。将 `PROXY` 替换成已有策略名。[Clash / Mihomo 快速开始](../README.zh-Hans.md#clash--mihomo)
 
 把 `RULE-SET` 条目排在宽泛匹配和 `MATCH` 之前。重新加载配置、更新 provider，再查看连接记录。示例的更新间隔是 86,400 秒，也可以手动提前刷新。参数含义见 [Mihomo 官方文档](https://wiki.metacubex.one/config/rule-providers/)。
 
-## 使用 Surge 基础配置
-
-[`base.conf`](../base.conf) 是个人配置的起点。它没有 `[Proxy]` 段，`include-other-group=` 也留空，使用前需要接入节点来源。地区策略组使用 `smart`，要求 Surge iOS 5.11.0 / Mac 5.7.0 或更新版本；见 [Smart Group 文档](https://manual.nssurge.com/policy-groups/smart.html)。
-
-1. 将 `base.conf` 另存为私有副本。如果在克隆的仓库里操作，把副本和凭据放进已忽略的 `local/` 目录。
-2. 在 `[Proxy Group]` 段添加节点来源组，填写你自己的 Surge 格式订阅。例如，替换下面的占位 URL：
-
-   ```ini
-   Subscription = select, policy-path=https://example.com/your-surge-subscription
-   ```
-
-3. 把**所有**空的 `include-other-group=` 改成 `include-other-group=Subscription`，包括 `PROXY` 和六个地区组。来源组名称需保持一致。Surge 支持节点列表，或带 `[Proxy]` 段的完整 Surge 配置作为来源，不能直接换成任意 Clash 订阅。详见 [Policy Including](https://manual.nssurge.com/policy-groups/policy-including.html)。
-4. 对照自己的节点名称检查地区正则。某地区没有匹配节点时，调整筛选条件或相应的策略组引用。AI 和媒体组也引用这些地区组，选中的路径必须能找到可用节点。
-5. 检查下表中的默认行为，再导入私有副本。在自己的客户端查看规则命中与所选策略后再正式使用。
-
-| `base.conf` 中的默认行为 | 需要检查什么 |
-| --- | --- |
-| 使用大陆 DNS，禁用 IPv6 | 是否符合当前网络环境 |
-| 开启局域网代理访问；HTTP `6152`、SOCKS5 `6153` | 是否需要其他局域网设备使用此代理 |
-| AI、媒体和地区策略组 | 节点是否可用，各服务应走哪个地区 |
-| Brokerage 和 DDNS 直连 | 直连是否适合自己的环境 |
-| 个人 Reject 名单与第三方 Reject 名单 | 阅读[个人名单的范围和来源](reject.md)；不需要时从副本中移除对应 `RULE-SET` 行 |
-| 第三方远程规则订阅 | 地址是否可访问，以及独立变化的覆盖范围 |
-
-基础配置使用 Sukka 的 AI 规则加本地补充，并未直接订阅本仓库的 `AI.txt`。按需添加独立名单与使用整份基础配置是两种接入方式。
-
 ## 更新与排查
 
-示例中的原始链接跟随 `main`。上游修改进入该分支后，需要在客户端刷新对应规则集或 provider。如果修改的是 `base.conf`，还需要更新自己的配置；只刷新规则集不会更新策略组或设置。
+原始链接跟随 `main`。上游修改进入该分支后，在客户端刷新对应规则集或 provider。
 
 | 现象 | 优先检查 |
 | --- | --- |
 | 名单已下载，但流量走错策略 | 是否有更早命中的规则、目标策略组是否正确、客户端是否处于规则模式 |
 | Provider 格式错误 | Surge 使用 `rules/`；Clash / Mihomo 使用 `clash/` 和 `classical` / `yaml` |
-| 基础配置中的地区组为空 | 来源组、`include-other-group` 和节点名称正则 |
 | 网站意外被拦截 | 实际命中的 Reject 规则；个人名单包含 CSDN 和博客园 |
-| 修改尚未生效 | URL 所指分支、客户端缓存，以及修改的是规则还是配置本身 |
+| 名单修改尚未生效 | URL 所指分支和客户端缓存 |
 
 反馈问题时，附上域名、客户端版本、规则文件、命中的规则和期望策略。分享配置或日志前，移除订阅 URL、token 和节点凭据。
 

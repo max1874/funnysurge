@@ -46,10 +46,10 @@ IBKR 独立于富途 / moomoo 的 Brokerage 名单，单独指定策略。
 
 ## Direct and reject · 直连与屏蔽
 
-The base profile assigns `DIRECT` to Brokerage and DDNS, and `REJECT` to Reject.
-Each list itself contains only matching rules; you choose the policy.
+Use `DIRECT` for Brokerage and DDNS if you want direct routing, and `REJECT`
+for Reject if you want to block those connections.
 
-基础配置将 Brokerage、DDNS 设为 `DIRECT`，Reject 设为 `REJECT`。名单本身只定义匹配条件，策略由你决定。
+需要直连时，为 Brokerage 和 DDNS 指定 `DIRECT`。需要屏蔽名单中的连接时，为 Reject 指定 `REJECT`。
 
 | List / 名单 | Scope / 内容 | Surge | Clash / Mihomo |
 | --- | --- | --- | --- |

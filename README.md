@@ -21,18 +21,13 @@ sites I choose to block. Subscribe to the lists you need and assign your own pol
   <sub>A recorded demo from <a href="https://max1874.com/funnysurge/">max1874.com/funnysurge</a>, where you can try it yourself.</sub>
 </p>
 
-The repository also includes a personal Surge base profile. Bring your own
-proxies: this project supplies rules and configuration examples, with no nodes
-or subscription service.
-
 ## Pick what you need
 
 | I want to… | Start here |
 | --- | --- |
 | Route ChatGPT, Claude, Gemini, or another service | [Rule catalog](docs/rules.md), with raw links for each client |
-| Add rules to an existing Surge profile | [Surge snippet](examples/surge-rules.conf) |
-| Add rule providers to Clash / Mihomo | [YAML snippet](examples/clash-rule-providers.yaml) |
-| Adapt the full Surge base profile | [base.conf](base.conf) and its [setup guide](docs/usage.md#use-the-surge-base-profile) |
+| Add rules to an existing Surge profile | [Surge quick start](#surge) |
+| Add rule providers to Clash / Mihomo | [Clash / Mihomo quick start](#clash--mihomo) |
 | Understand the personal blocklist | [Reject policy and sources · 中文](docs/reject.md) |
 
 ## Quick start
@@ -50,8 +45,8 @@ RULE-SET,https://raw.githubusercontent.com/max1874/funnysurge/main/rules/OpenAI.
 ```
 
 Save the profile, refresh the rule set, and inspect a matching request in Surge
-to see which rule and policy it actually used. More lists and optional direct
-and reject rules are in the [Surge snippet](examples/surge-rules.conf).
+to see which rule and policy it actually used. Find more lists, including direct
+and reject rules, in the [rule catalog](docs/rules.md).
 
 ### Clash / Mihomo
 
@@ -82,16 +77,14 @@ troubleshooting.
 funnysurge/
 ├── README.md                  English overview
 ├── README.zh-Hans.md          中文说明
-├── base.conf                  Surge base profile; customize before use
 ├── rules/                     Surge rule sets (.txt)
 ├── clash/                     Clash / Mihomo classical providers (.txt, YAML)
-├── examples/                  Snippets to merge into an existing profile
 ├── docs/                      Rule catalog, setup guides, Reject sources
 ├── assets/                    Project icon
 └── LICENSE                    MIT
 ```
 
-`rules/`, `clash/`, and `base.conf` keep their published paths so existing raw
+`rules/` and `clash/` keep their published paths so existing raw
 subscriptions continue to work. Browse by service through the catalog, or by
 client through the two rule directories.
 
@@ -99,8 +92,8 @@ client through the two rule directories.
 
 ### Does this include proxy servers or a subscription?
 
-No. The repository has rule files, snippets, and a base profile. A rule only
-decides which policy a connection matches; you supply the proxies behind it.
+No. A rule selects the policy for a connection. Supply the proxies in your
+client configuration.
 
 ### Should I use `AI.txt` or the individual service lists?
 
@@ -112,7 +105,7 @@ individual lists when services need different policies, and put them before
 
 Clash Verge Rev runs the Mihomo core, so use the `clash/` files as
 `behavior: classical`, `format: yaml` rule providers, as in the
-[YAML snippet](examples/clash-rule-providers.yaml).
+[Clash / Mihomo quick start](#clash--mihomo).
 
 ### How are the lists updated?
 
@@ -121,9 +114,8 @@ refresh the rule set or provider in your client to pick up changes.
 
 ### How does this relate to Sukka, blackmatrix7, or Loyalsoldier rules?
 
-Those cover far more ground. These lists are small and specific, and work
-alongside them: [base.conf](base.conf) combines rules from those projects with
-these lists.
+Those cover far more ground. These lists are small and specific, and you can
+combine them with those projects' rules in your client.
 
 More on the project page: <https://max1874.com/funnysurge/>
 
@@ -146,13 +138,7 @@ For a correction, include the affected domain, client, rule file, and expected
 route in an [issue](https://github.com/max1874/funnysurge/issues). See the
 [maintenance notes](docs/usage.md#maintaining-rules) before editing a list.
 
-## Sources and license
-
-The base profile also references independently maintained rules from
-[Sukka](https://github.com/SukkaW/Surge),
-[blackmatrix7](https://github.com/blackmatrix7/ios_rule_script), and
-[Loyalsoldier](https://github.com/Loyalsoldier/surge-rules). Those remote lists
-have their own policies and licenses.
+## License
 
 This repository is licensed under [MIT](LICENSE) © 2024 MAX LIN. Original copyright notices
 are preserved.

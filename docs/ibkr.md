@@ -11,9 +11,9 @@
 RULE-SET,https://raw.githubusercontent.com/max1874/funnysurge/main/rules/IBKR.txt,PROXY
 ```
 
-把 `PROXY` 替换为实际节点或策略组。Clash 示例见
-[配置片段](../examples/clash-rule-providers.yaml)。基础配置中的
-`Brokerage.txt` 用于富途 / moomoo；IBKR 单独订阅、单独选策略。
+把 `PROXY` 替换为实际节点或策略组。在 Clash / Mihomo 中，按快速开始的写法创建 provider，并将 `url` 换成规则索引中 IBKR 一行的 Clash 原始链接。[快速开始](../README.zh-Hans.md#clash--mihomo) · [规则索引](rules.md#interactive-brokers--盈透证券)
+
+`Brokerage.txt` 用于富途 / moomoo，IBKR 单独订阅并指定策略。
 
 ## 来源与覆盖
 
