@@ -12,29 +12,20 @@
    same request, and before `FINAL`. Save and refresh the rule set in the client.
 4. Open the service, then inspect the request's matched rule and final policy.
 
-For broader AI coverage, pick `AI.txt`. Use individual lists when services need
-different policies. If you use both, put specific overrides first.
-[Surge quick start](../README.md#surge)
-
-See Surge's [rule system documentation](https://manual.nssurge.com/rules/overview.html)
-for matching behavior.
+[Copyable Surge example](../README.md#surge) · [Surge rule matching](https://manual.nssurge.com/rules/overview.html)
 
 ## Clash / Mihomo rule providers
 
-Use the files from `clash/`, with `behavior: classical` and `format: yaml`.
-Their `.txt` extension is retained for existing subscribers; the content is a
-YAML `payload` list.
+1. Copy the Clash / Mihomo raw URL from the [rule catalog](rules.md).
+2. Add an entry to the existing top-level `rule-providers` mapping. Use
+   `behavior: classical` and `format: yaml` for these YAML files with a `.txt`
+   extension. Give each provider a unique name and cache path.
+3. Add `RULE-SET,<provider-name>,<policy>` to the existing `rules` list before
+   broader matches and `MATCH`. Choose a configured policy or a built-in one
+   such as `DIRECT`.
+4. Reload the profile, refresh the provider, then inspect a matching connection.
 
-Add provider definitions to the top-level `rule-providers` mapping and matching
-entries to the `rules` list. Give each provider a unique name and cache path,
-and replace `PROXY` with your own policy name.
-[Clash / Mihomo quick start](../README.md#clash--mihomo)
-
-Put `RULE-SET` entries before broader matches and `MATCH`. Reload the profile,
-refresh the provider, then inspect a matching connection. The example requests
-provider updates every 86,400 seconds; a manual refresh can fetch a new list
-sooner. Provider options are documented in the
-[Mihomo manual](https://wiki.metacubex.one/en/config/rule-providers/).
+[Copyable Clash / Mihomo example](../README.md#clash--mihomo) · [Mihomo provider options](https://wiki.metacubex.one/en/config/rule-providers/)
 
 ## Updates and troubleshooting
 

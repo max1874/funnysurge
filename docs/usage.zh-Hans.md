@@ -9,17 +9,16 @@
 3. 把具体规则放在可能先匹配同一请求的宽泛规则之前，并排在 `FINAL` 之前。保存配置，在客户端更新规则集。
 4. 打开对应服务，在请求记录中查看实际命中的规则与最终策略。
 
-需要统一分流多个 AI 服务时可选择 `AI.txt`。需要分别指定策略时用独立名单。如果两者都用，把具体服务的覆盖规则放在前面。[Surge 快速开始](../README.zh-Hans.md#surge)
-
-匹配行为参考 Surge 的[规则系统文档](https://manual.nssurge.com/rules/overview.html)。
+[可复制的 Surge 示例](../README.zh-Hans.md#surge) · [Surge 规则匹配说明](https://manual.nssurge.com/rules/overview.html)
 
 ## Clash / Mihomo rule-provider
 
-使用 `clash/` 下的文件，设置 `behavior: classical` 和 `format: yaml`。为兼容已有订阅，扩展名保留 `.txt`，文件内容实际是 YAML `payload` 列表。
+1. 从[规则索引](rules.md)复制 Clash / Mihomo 一列的原始链接。
+2. 在已有的顶层 `rule-providers` 中添加一项。文件扩展名是 `.txt`，内容是 YAML，设置 `behavior: classical` 和 `format: yaml`。每个 provider 使用独立的名称和缓存路径。
+3. 将 `RULE-SET,<provider-name>,<policy>` 加入已有的 `rules` 列表，排在宽泛规则和 `MATCH` 之前。使用配置中已有的策略名，或 `DIRECT` 等内置策略。
+4. 重新加载配置、更新 provider，再查看连接记录。
 
-把 provider 定义添加到顶层的 `rule-providers` 映射，把匹配规则添加到 `rules` 列表。每个 provider 使用独立的名称和缓存路径。将 `PROXY` 替换成已有策略名。[Clash / Mihomo 快速开始](../README.zh-Hans.md#clash--mihomo)
-
-把 `RULE-SET` 条目排在宽泛匹配和 `MATCH` 之前。重新加载配置、更新 provider，再查看连接记录。示例的更新间隔是 86,400 秒，也可以手动提前刷新。参数含义见 [Mihomo 官方文档](https://wiki.metacubex.one/config/rule-providers/)。
+[可复制的 Clash / Mihomo 示例](../README.zh-Hans.md#clash--mihomo) · [Mihomo provider 参数](https://wiki.metacubex.one/config/rule-providers/)
 
 ## 更新与排查
 
