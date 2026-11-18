@@ -19,16 +19,13 @@ funnysurge 是一组手工维护的 Surge 与 Clash / Mihomo 分流规则集。�
   <sub>动图录自 <a href="https://max1874.com/funnysurge/">max1874.com/funnysurge</a>，那里可以亲手试。</sub>
 </p>
 
-仓库也保留了一份个人 Surge 基础配置。节点需要自备；这里提供规则和配置示例，没有代理节点或订阅服务。
-
 ## 从哪里开始
 
 | 你想做什么 | 对应入口 |
 | --- | --- |
 | 为 ChatGPT、Claude、Gemini 等服务单独分流 | [规则索引](docs/rules.md)，包含各客户端的原始订阅链接 |
-| 给已有 Surge 配置添加规则 | [Surge 配置片段](examples/surge-rules.conf) |
-| 给 Clash / Mihomo 添加 rule-provider | [YAML 配置片段](examples/clash-rule-providers.yaml) |
-| 使用完整的 Surge 基础配置 | [base.conf](base.conf) 与[接入说明](docs/usage.zh-Hans.md#使用-surge-基础配置) |
+| 给已有 Surge 配置添加规则 | [Surge 快速开始](#surge) |
+| 给 Clash / Mihomo 添加 rule-provider | [Clash / Mihomo 快速开始](#clash--mihomo) |
 | 了解个人屏蔽名单的取舍 | [Reject 策略与来源](docs/reject.md) |
 
 ## 快速开始
@@ -43,7 +40,7 @@ funnysurge 是一组手工维护的 Surge 与 Clash / Mihomo 分流规则集。�
 RULE-SET,https://raw.githubusercontent.com/max1874/funnysurge/main/rules/OpenAI.txt,PROXY
 ```
 
-保存配置并更新规则集后，在 Surge 请求记录中查看实际命中的规则和策略。[Surge 配置片段](examples/surge-rules.conf)中还有其他服务，以及可选的直连和屏蔽规则。
+保存配置并更新规则集后，在 Surge 请求记录中查看实际命中的规则和策略。其他服务以及可选的直连和屏蔽规则见[规则索引](docs/rules.md)。
 
 ### Clash / Mihomo
 
@@ -71,22 +68,20 @@ rules:
 funnysurge/
 ├── README.md                  英文首页
 ├── README.zh-Hans.md          中文说明
-├── base.conf                  Surge 基础配置，使用前需调整
 ├── rules/                     Surge 规则集（.txt）
 ├── clash/                     Clash / Mihomo 规则集（.txt，内容为 YAML）
-├── examples/                  合并到已有配置中的示例片段
 ├── docs/                      规则索引、配置指南、Reject 来源
 ├── assets/                    项目图标
 └── LICENSE                    MIT 许可证
 ```
 
-`rules/`、`clash/` 和 `base.conf` 保留原有公开路径，已有的原始订阅链接可以继续使用。按服务找规则看索引，按客户端找文件看对应目录。
+`rules/` 和 `clash/` 保留原有公开路径，已有的规则集订阅链接可以继续使用。按服务找规则看索引，按客户端找文件看对应目录。
 
 ## 常见问题
 
 ### 这里提供节点或订阅吗？
 
-不提供。仓库里只有规则文件、配置片段和基础配置。规则只决定连接匹配到哪个策略，策略背后的节点需要自备。
+不提供。规则只决定连接匹配到哪个策略，策略背后的节点需要自备。
 
 ### 用 `AI.txt` 还是单个服务的名单？
 
@@ -94,7 +89,7 @@ funnysurge/
 
 ### Clash Verge Rev 能用吗？
 
-Clash Verge Rev 内置 Mihomo 内核，按 `behavior: classical`、`format: yaml` 引用 `clash/` 下的文件即可，参考 [YAML 配置片段](examples/clash-rule-providers.yaml)。
+Clash Verge Rev 内置 Mihomo 内核，按 `behavior: classical`、`format: yaml` 引用 `clash/` 下的文件即可，参考 [Clash / Mihomo 快速开始](#clash--mihomo)。
 
 ### 名单怎么更新？
 
@@ -102,7 +97,7 @@ Clash Verge Rev 内置 Mihomo 内核，按 `behavior: classical`、`format: yaml
 
 ### 和 Sukka、blackmatrix7、Loyalsoldier 的规则是什么关系？
 
-那些项目覆盖范围大得多。这里的名单小而具体，可以和它们一起用：[base.conf](base.conf) 就把那些项目的规则和这里的名单放在一起引用。
+那些项目覆盖范围大得多。这里的名单小而具体，可以在同一份客户端配置中搭配使用。
 
 项目页面：<https://max1874.com/funnysurge/>
 
@@ -115,8 +110,6 @@ Clash Verge Rev 内置 Mihomo 内核，按 `behavior: classical`、`format: yaml
 
 如需纠错，请在 [issue](https://github.com/max1874/funnysurge/issues) 中提供受影响的域名、客户端、规则文件和期望的分流结果。修改规则前可先看[维护约定](docs/usage.zh-Hans.md#维护规则)。
 
-## 来源与许可证
-
-基础配置还引用了 [Sukka](https://github.com/SukkaW/Surge)、[blackmatrix7](https://github.com/blackmatrix7/ios_rule_script) 和 [Loyalsoldier](https://github.com/Loyalsoldier/surge-rules) 独立维护的规则。远程名单遵循各自的维护策略和许可证。
+## 许可证
 
 本仓库采用 [MIT](LICENSE) 许可证，© 2024 MAX LIN，保留原有版权声明。
