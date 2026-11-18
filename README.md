@@ -28,7 +28,7 @@ sites I choose to block. Subscribe to the lists you need and assign your own pol
 | Route ChatGPT, Claude, Gemini, or another service | [Rule catalog](docs/rules.md), with raw links for each client |
 | Add rules to an existing Surge profile | [Surge quick start](#surge) |
 | Add rule providers to Clash / Mihomo | [Clash / Mihomo quick start](#clash--mihomo) |
-| Understand the personal blocklist | [Reject policy and sources · 中文](docs/reject.md) |
+| Understand the personal blocklist | [Reject policy and sources · 中文](docs/rules.md#reject-策略与来源) |
 
 ## Quick start
 
@@ -86,7 +86,7 @@ funnysurge/
 
 `rules/` and `clash/` keep their published paths so existing raw
 subscriptions continue to work. Browse by service through the catalog, or by
-client through the two rule directories. [Documentation index](docs/README.md)
+client through the two rule directories.
 
 ## FAQ
 
@@ -132,7 +132,7 @@ More on the project page: <https://max1874.com/funnysurge/>
   coverage. The [catalog](docs/rules.md) records the known differences.
 - **Reject expresses a preference.** It includes sites such as CSDN and
   cnblogs. It blocks connections, not search results, and is not a malware
-  classification. Read the [policy and sources](docs/reject.md) before enabling it.
+  classification. Read the [policy and sources](docs/rules.md#reject-策略与来源) before enabling it.
 
 For a correction, include the affected domain, client, rule file, and expected
 route in an [issue](https://github.com/max1874/funnysurge/issues). See the
