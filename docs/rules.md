@@ -1,6 +1,6 @@
 # Rule catalog · 规则索引
 
-[English overview](../README.md) · [中文首页](../README.zh-Hans.md) · [Setup](usage.md) · [配置指南](usage.zh-Hans.md)
+[English overview](../README.md#english) · [中文首页](../README.md#简体中文) · [Setup guide](usage.md#english) · [配置指南](usage.md#简体中文)
 
 Each **Raw** link is a subscription URL on `main`. Surge files contain matching
 rules, and you set the policy in your profile. Clash / Mihomo files contain
