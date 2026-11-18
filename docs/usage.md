@@ -51,6 +51,6 @@ from shared configurations and logs.
   also consider the separate `AI.txt` aggregate when editing an AI service.
 - Add or update the catalog when introducing a list or changing format coverage.
 - For Reject changes, update both lists and record the source, reason, count,
-  and date in [reject.md](reject.md).
+  and date. [Reject policy and sources](rules.md#reject-策略与来源)
 - Keep private subscriptions and generated personal profiles in `local/`.
 - Keep both language versions of the overview and setup guide aligned.
