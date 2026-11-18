@@ -16,7 +16,7 @@ The lists cover AI services, development tools, media, direct connections, and
 sites I choose to block. Subscribe to the lists you need and assign your own policies.
 
 <p align="center">
-  <a href="https://max1874.com/funnysurge/"><img src="assets/demo.en.gif" width="600" alt="Domains go to PROXY, DIRECT or REJECT according to the list they are in"></a>
+  <a href="https://max1874.com/funnysurge/"><img src="assets/demo.en.webp" width="600" alt="Domains go to PROXY, DIRECT or REJECT according to the list they are in"></a>
   <br>
   <sub>A recorded demo from <a href="https://max1874.com/funnysurge/">max1874.com/funnysurge</a>, where you can try it yourself.</sub>
 </p>
@@ -79,14 +79,14 @@ funnysurge/
 ├── README.zh-Hans.md          中文说明
 ├── rules/                     Surge rule sets (.txt)
 ├── clash/                     Clash / Mihomo classical providers (.txt, YAML)
-├── docs/                      Rule catalog, setup guides, Reject sources
-├── assets/                    Project icon
+├── docs/                      Rule catalog, setup guides, and coverage notes
+├── assets/                    Project icon and README demos
 └── LICENSE                    MIT
 ```
 
 `rules/` and `clash/` keep their published paths so existing raw
 subscriptions continue to work. Browse by service through the catalog, or by
-client through the two rule directories.
+client through the two rule directories. [Documentation index](docs/README.md)
 
 ## FAQ
 
@@ -127,7 +127,7 @@ More on the project page: <https://max1874.com/funnysurge/>
 - **Choose an aggregate or individual lists.** `AI.txt` combines several
   services and some additional domains. It is maintained separately, rather
   than generated as an exact union of the individual files.
-- **The client formats have differences.** There are 22 Surge lists and 21
+- **The client formats have differences.** There are 21 Surge lists and 20
   Clash lists; TikTok is currently Surge-only. Same-name lists can differ in
   coverage. The [catalog](docs/rules.md) records the known differences.
 - **Reject expresses a preference.** It includes sites such as CSDN and

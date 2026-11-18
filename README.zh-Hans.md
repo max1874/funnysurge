@@ -14,7 +14,7 @@
 funnysurge 是一组手工维护的 Surge 与 Clash / Mihomo 分流规则集。规则覆盖 AI 服务、开发工具、媒体、直连需求和个人屏蔽名单。按需订阅规则，再指定适合自己的策略。
 
 <p align="center">
-  <a href="https://max1874.com/funnysurge/"><img src="assets/demo.zh.gif" width="600" alt="域名按所在的名单分到 PROXY、DIRECT 或 REJECT"></a>
+  <a href="https://max1874.com/funnysurge/"><img src="assets/demo.zh.webp" width="600" alt="域名按所在的名单分到 PROXY、DIRECT 或 REJECT"></a>
   <br>
   <sub>动图录自 <a href="https://max1874.com/funnysurge/">max1874.com/funnysurge</a>，那里可以亲手试。</sub>
 </p>
@@ -70,12 +70,12 @@ funnysurge/
 ├── README.zh-Hans.md          中文说明
 ├── rules/                     Surge 规则集（.txt）
 ├── clash/                     Clash / Mihomo 规则集（.txt，内容为 YAML）
-├── docs/                      规则索引、配置指南、Reject 来源
-├── assets/                    项目图标
+├── docs/                      规则索引、配置指南和覆盖说明
+├── assets/                    项目图标和 README 演示动图
 └── LICENSE                    MIT 许可证
 ```
 
-`rules/` 和 `clash/` 保留原有公开路径，已有的规则集订阅链接可以继续使用。按服务找规则看索引，按客户端找文件看对应目录。
+`rules/` 和 `clash/` 保留原有公开路径，已有的规则集订阅链接可以继续使用。按服务找规则看索引，按客户端找文件看对应目录。[文档导航](docs/README.md)
 
 ## 常见问题
 
@@ -105,7 +105,7 @@ Clash Verge Rev 内置 Mihomo 内核，按 `behavior: classical`、`format: yaml
 
 - **个人筛选，手动维护。** 规则反映我的使用习惯，可能需要按你的环境调整。部分条目匹配共享基础设施或较宽的关键词，服务名称不代表命中的连接只属于该服务。
 - **聚合规则与独立规则按需选择。** `AI.txt` 包含多个 AI 服务和一些额外域名，独立维护，并非其他文件自动合并后的精确合集。
-- **两种格式存在差异。** 当前有 22 份 Surge 规则、21 份 Clash 规则；TikTok 暂时只有 Surge 版。同名文件的覆盖范围也可能不同，已知差异见[规则索引](docs/rules.md)。
+- **两种格式存在差异。** 当前有 21 份 Surge 规则、20 份 Clash 规则；TikTok 暂时只有 Surge 版。同名文件的覆盖范围也可能不同，已知差异见[规则索引](docs/rules.md)。
 - **Reject 是个人访问偏好。** 名单包含 CSDN、博客园等站点，阻止连接，不会隐藏搜索结果，也不代表恶意网站判定。启用前请阅读[策略与来源](docs/reject.md)。
 
 如需纠错，请在 [issue](https://github.com/max1874/funnysurge/issues) 中提供受影响的域名、客户端、规则文件和期望的分流结果。修改规则前可先看[维护约定](docs/usage.zh-Hans.md#维护规则)。
